@@ -1,0 +1,20 @@
+.home{
+  flex: 0.8;
+  background-color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home.home-collapse{
+  flex: 1;
+}
+
+
+
+@media(max-width: 576px){
+  .home{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}

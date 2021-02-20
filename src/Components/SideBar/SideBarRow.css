@@ -1,0 +1,45 @@
+.sideBarRow{
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+.sideBarRow.sideBarRow-collapse{
+  flex: 0;
+  display: block;
+  text-align: center;
+}
+
+.sideBarRow:hover{
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.icon{
+  color: gray;
+  font-size: large !important;
+}
+.sideBarRow:hover > .icon{
+  color: red;
+}
+
+.sideBarRow.selected{
+  background-color: lightgray;
+}
+.sideBarRow.selected > .icon{
+  color: red;
+}
+
+.title{
+  flex: 1;
+  margin-left: 15px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+@media(max-width: 576px){
+  .sideBarRow{
+    display: block;
+    width: fit-content
+  
+  }
+}
