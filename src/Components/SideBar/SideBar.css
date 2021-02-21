@@ -1,9 +1,15 @@
 .sideBar{
   flex: 0.2;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+.sideBar::-webkit-scrollbar{
+  width: 0px;
 }
 
 .sideBar.sideBar-collapse{
-  flex: 0;
+  flex: 0.1;
 }
 
 hr{

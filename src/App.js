@@ -51,7 +51,7 @@ function App() {
       <UserProfile user={user} />
       <Notification notify={notify} />
       <div className="homePage">
-        <SideBar open={open} onShowMore={onShowMore} showMore={showMore} />
+        <SideBar className="sideBar" open={open} onShowMore={onShowMore} showMore={showMore} />
         <Home open={open}/>
       </div>
       
